@@ -1,0 +1,41 @@
+.primary-btn {
+    font-family: $buttonFont;
+    color: $colorNavTitleBtn;
+    text-transform: uppercase;
+    background-color: white;
+    padding: 8px 10px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
+        &:hover {
+            color: $colorNavTitleBtn;
+        }
+
+        &::after {
+            content: ">";
+
+        }
+        &:hover::after{
+            content: ">";
+            position: relative;
+            left: 5px;
+            
+        }
+}
+
+.secondary-btn {
+    
+    &:hover {
+        color: $white;
+    }
+    &::after {
+        content: ">";
+        color: $pink;
+    }
+    &:hover::after {
+        content: ">";
+        color: $pink;
+        position: relative;
+        left: 5px;
+        
+    }
+}
